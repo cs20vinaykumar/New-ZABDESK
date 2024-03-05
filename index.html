@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zabdesk - student's HomePage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <div class="logo">
+        <img src="logofull.png" alt="" style="margin-left: 10px" />
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href=""> Home |</a></li>
+          <li><a href=""> About |</a></li>
+          <li><a href="">Teaching's Evaluation |</a></li>
+          <li><a href="">EDC Job Portal |</a></li>
+          <li><a href="">IS / Thesis Portal |</a></li>
+          <li><a href=""> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="piyu">
+
+      <div class="board">
+        <h2>Notice Board</h2>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="form-section">
+        <div class="sub-section one">
+          <div class="fields">
+            
+            <form action=""  method="post">
+           <h1>Login</h1>
+            <div class="input-field">
+              <h4>Username</h4>
+              <input type="text" id="username" />
+            </div>
+
+            <div class="input-field">
+              <h4>Password</h4>
+              <input type="password" id="password" />
+            </div>
+
+
+
+            <div class="buttons">
+              <h5
+                style="display: block; margin-bottom: 5px; color: rgb(6, 5, 5)"
+              >
+                Campus
+              </h5>
+              <select name="" id="" class="last">
+                <option value="" selected>Karachi</option>
+                <option value="">Sukkur</option>
+              </select>
+              
+            </div>
+
+
+            <div id="error_message"> </div>
+
+            <div class="input-field">
+             
+              <a href="sign up.html"> <input type="button" value="Login"  onclick="Login()" > </a>
+           
+            </div> 
+            <div class="input-field">
+              <input
+                type="button"value="Forgot password" id="bttn" >
+            </div>
+          </form>
+          </div>
+        </div>
+       
+        <div class="sub-section two">
+         
+          <div class="box-1">
+            <h3>
+              Exclusive Discount Offer for SZABIST Students on Fire Fly
+              Restaurant
+            </h3>
+
+            <p>
+              Tired of eating from same old restaurants? FIREFLY is happy to
+              announce an exclusive discount offer on our PAN-Asian Cuisine for
+              SZABIST. Dine with us today and get 25% discount on lunch and 15%
+              discount on Dinner. (Offer is valid for current students, alumni
+              holding SAGA cards and faculty with valid university id cards
+              only.) Click the link below for details:
+
+              <a
+                href="https://www.facebook.com/fireflyasian?mibextid=LQQJ4d"
+                style="color: rgb(30, 30, 193); padding: 2px"
+                >Click Here!</a
+              >
+            </p>
+          </div>
+
+          <div class="box-2">
+            <h3>ADMIT CARD VERIFICATION NOTICE</h3>
+            <p>
+              The exam dept. will be verifying the final exams admit cards of
+              all registered students from Wednesday 10th till Sat, 20th May
+              2023, after which a certain late fee will be charged for the same.
+              For details
+              <a
+                href="AdmitCard-Spring2023.pdf"
+                style="color: rgb(30, 30, 193); padding: 2px"
+              >
+                Download Notice</a
+              >
+              .
+            </p>
+          </div>
+
+          <div class="box-3">
+            <h3>Fee Notice Spring-2023</h3>
+            <p>
+              Last date to submit the fee deadline for Spring 2023 semester is Friday, february 10th, 2023 for further detail please download fee notice.
+              <a
+                href=""
+                style="color: rgb(30, 30, 193); padding: 2px"
+              >
+              Download fee notice</a> <br>
+              fees Guideline: <a
+              href=""
+              style="color: rgb(30, 30, 193); padding: 2px"
+            >
+            Download fee Guidlines</a>
+              .
+            </p>
+          </div>
+
+          <div class="box-4">
+            <h3>On-Line registration Spring 2023</h3>
+            <p>
+              On-Line Registration for Spring 2023 will start from February 08,
+              2023. All students are required to register on-line through.
+              <a
+                href="https://springzabdesk.szabist.edu.pk"
+                >https://springzabdesk.szabist.edu.pk</a
+              >
+
+            </p>
+          </div>
+
+          <div class="box-5">
+            <h3>Generate Online Fees Challan</h3>
+            <p>
+              For creating Payment Challan <a href="https://springzabdesk.szabist.edu.pk/FeePayment/Forms/FeePaymentChallan.aspx">Click Here.</a> 
+               For Re-printing Payment Challan <a href="https://springzabdesk.szabist.edu.pk/FeePayment/Forms/frmFeePaymentChallanPrint.aspx">Click Here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+
+  function Login(){
+      var error_message = document.getElementById("error_message");
+      error_message.innerHTML = "";
+
+
+   var username = document.getElementById("username");
+
+   var password = document.getElementById("password");
+  
+
+   if(username.value==""){
+      username.classList.add("error");
+      username.classList.add("message");
+      error_message.innerHTML += "Username feild is empty*  <br>"
+
+   }
+  
+
+   if(password.value==""){
+      password.classList.add("error");
+      password.classList.add("message");
+      error_message.innerHTML += "Password feild is empty* "
+
+   }
+ 
+   return false;
+
+  }
+
+  
+</script>
